@@ -1,0 +1,152 @@
+body {
+    font-family: "Noto Sans", sans-serif;
+}
+
+h1, h2 {
+    font-family: "Lora", serif;
+}
+
+.navbar-brand {
+    font-family: "Arial", Arial;
+    font-weight: bold;
+    color: #0597F2;
+}
+
+.header-title {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.blue {
+    background-color: #0597F2;
+}
+
+.dark {
+    background-color: #021226;
+}
+
+.navbar-dark{
+    background-color: #021226 !important; 
+}
+
+section {
+    scroll-margin: 50px;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.card {
+    border: none;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.card-service {
+    background-color: #021226;
+    color: #fff;
+    cursor: pointer;
+}
+
+.card-service:hover {
+    background-color: #0597F2;
+    color: #021226;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-body {
+    display: flex !important;
+    flex-direction: column !important;
+    }
+    
+    .card .btn {
+    margin-top: auto !important;
+    }
+
+    .hidden {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(-100%);
+        transition: all 1s;
+    }
+    
+    @media(prefers-reduced-motion) {
+        .hidden {
+            transition: none;
+        }
+    }
+    
+    .show {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+    
+    .planos {
+    
+    }
+    
+    .plano:nth-child(2) {
+      transition-delay: 200ms;
+    }
+    
+    .plano:nth-child(3) {
+      transition-delay: 400ms;
+    }
+    
+    .plano:nth-child(4) {
+      transition-delay: 600ms;
+    }
+    
+    .plano:nth-child(5) {
+        transition-delay: 800ms;
+    }
+    
+    .plano:nth-child(6) {
+        transition-delay: 1000ms;
+    }
+
+    .client-img {
+        object-fit: contain;
+        width: 150px;
+        padding: 0 1%;
+    }
+
+
+    .nav-link {
+        position: relative;
+    }
+
+    .nav-link:hover {
+        
+    }
+
+    .nav-link::after {
+        content: '';
+        opacity: 0;
+        transition: all 0.2s;
+        height: 2px;
+        width: 100%;
+        background-color: #0597F2;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .nav-link:hover::after {
+        opacity: 1;
+    }
+
+    .active {
+        color: #fff;
+    }
+   

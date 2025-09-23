@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecknoo</title>
+
+    <!-- Adicionando bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Icones bootstrap -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+     <!-- Fonts do google -->
+     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <!-- Conectando CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a href="#"><img height="50px" src="images/logo.png" alt="logo"></a>
+            <a class="navbar-brand" href="#">Tecknoo</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"> <a class="nav-link" href="#">Início</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="#solucoes">Soluções</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="#planos">Planos</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="#sobre">Sobre nós</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="https://wa.me/558892361828" target="_blank">Contato</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- header -->
+     <header class="d-flex align-items-center pt-3 mt-5">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-5">
+                    <h1 class="header-title"> Descubra <br>O que podemos <br>Conquistar juntos</h1>
+                    <p>Junte-se à nossa jornada de inovação e sucesso. Estamos focados em entregar soluções para o seu negócio e transformar os seus sonhos em realidade</p>
+                    <div class="d-flex gap-3 mb-3">
+                        <a href="https://wa.me/558892361828"><button class="btn btn-primary">Saiba mais</button></a>
+                        <a href="https://wa.me/558892361828"><button class="btn btn-secondary">Experimente agora</button></a>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <img class="img-fluid" src="images/Header.png" alt="header image">
+                </div>
+            </div>
+        </div>
+     </header>
+
+    <section id="clientes" class="bg-light py-5">
+        <h2 class="title text-center py-4">Clientes parceiros</h2>
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+                <img class="client-img img-fluid" src="images/logo_carlin.jpg" alt="cliente 1">
+                <img class="client-img img-fluid" src="images/logo_carlin.jpg" alt="cliente 2">
+                <img class="client-img img-fluid" src="images/logo_carlin.jpg" alt="cliente 3">
+                <img class="client-img img-fluid" src="images/logo_carlin.jpg" alt="cliente 4">
+                <img class="client-img img-fluid" src="images/logo_carlin.jpg" alt="cliente 5">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="solucoes" class="py-5">
+        <div class="container planos hidden">
+            <h2 class="title text-center">Conheça as soluções que oferecemos</h2>
+            <div class="row text-center">
+                <div class="col-lg-4 col-sm-6 my-2">
+                    <div class="card card-service py-4">
+                        <div class="card-body">
+                            <i class="bi bi-cart-check display-5"></i>
+                            <h5 class="card-title mt-3">PDV</h5>
+                            <p class="card-text">O PDV mais bonito do Brasil, agora online e offline!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 my-2">
+                    <div class="card card-service py-4">
+                        <div class="card-body">
+                            <i class="bi bi-piggy-bank display-5"></i>
+                            <h5 class="card-title mt-4">Controle Financeiro</h5>
+                            <p class="card-text">Financeiro descomplicado para a sua empresa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 my-2">
+                    <div class="card card-service py-4">
+                        <div class="card-body">
+                            <i class="bi bi-file-earmark-ruled display-5"></i>
+                            <h5 class="card-title mt-4">Emissão de Boletos</h5>
+                            <p class="card-text">Emita boletos em um clique e agilize as vendas da sua empresa!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 my-2">
+                    <div class="card card-service py-4">
+                        <div class="card-body">
+                            <i class="bi bi-clipboard-data display-5"></i>
+                            <h5 class="card-title mt-4">Faturamento</h5>
+                            <p class="card-text">Realize vendas, pedidos, ordem de serviços, orçamentos de forma automatizada.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 my-2">
+                    <div class="card card-service py-4">
+                        <div class="card-body">
+                            <i class="bi bi-box-seam display-5"></i>
+                            <h5 class="card-title mt-3">Controle de Estoque</h5>
+                            <p class="card-text">Controle seus pedidos de compra, transferência de estoque entre lojas, histórico de movimentações, impressões de etiquetas e muito mais.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 my-2">
+                    <div class="card card-service py-4">
+                        <div class="card-body">
+                            <i class="bi bi-file-earmark-check display-5"></i>
+                            <h5 class="card-title mt-3">Emissão de Documentos Fiscais</h5>
+                            <p class="card-text">Emita NF-e, CFe, MDF-e, CTE e NFC-e de forma simples, rápida e segura!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planos -->
+    <section id="planos" class="py-5 blue">
+        <div class="container mt-3 planos hidden">
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+              <h1 class="display-4 fw-bold text-body-emphasis">Planos</h1>
+            </div>
+      
+            <main>
+              <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                  <div class="card h-100 mb-4 rounded-3 shadow-sm hidden plano">
+                    <div class="card-header py-3">
+                      <img class="bi me-2" width="70" padding="0" aria-hidden="true" src="/images/MEI.png">
+                      <h4 class="my-0 fw-bold">MEI</h4>
+                      <p class="mt-1 fs-6 text-body-secondary">Para você que tem um MEI e deseja controlar sua empresa</p>
+                    </div>
+                    <div class="card-body">
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li class="fw-bold">Tudo que o plano controle proporciona</li>
+                        <li>apenas para 1 computador</li>
+                        <li>Não permite emissão de Doc fiscais</li>
+                      </ul>
+                      <a type="button" href="https://wa.me/558892361828" target="_blank" class="w-100 btn btn-lg btn-outline-primary">Contratar</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 mb-4 rounded-3 shadow-sm hidden plano">
+                    <div class="card-header py-3">
+                      <img class="bi me-2" width="70" padding="0" aria-hidden="true" src="/images/DFE.png">
+                      <h4 class="my-0 fw-bold">Documentos Fiscais Eletrônicos</h4>
+                      <p class="mt-1 fs-6 text-body-secondary">Apenas entrada de notas fiscais e vendas</p>
+                    </div>
+                    <div class="card-body">
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li>Cadastro de produtos</li>
+                        <li>Cadastro de clientes</li>
+                        <li>Emissão de Nf-e</li>
+                        <li>Emissão de CT-e</li>
+                        <li>Emissão de MDF-e</li>
+                        <li>Envio de XML`s por Email</li>
+                      </ul>
+                      <a type="button" href="https://wa.me/558892361828" target="_blank" class="w-100 btn btn-lg btn-outline-primary">Contratar</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 mb-4 rounded-3 shadow-sm hidden plano">
+                    <div class="card-header py-3">
+                      <img class="bi me-2" width="100" padding="0" aria-hidden="true" src="/images/BASICO.png">
+                      <h4 class="my-0 fw-bold">Básico</h4>
+                      <p class="mt-1 fs-6 text-body-secondary">Apenas entrada de notas fiscais e vendas</p>
+                    </div>
+                    <div class="card-body">
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li class="fw-bold">Todas as funções do plano anterior</li>
+                        <li>Abertura e fechamento de caixa</li>
+                        <li>Emissão de cupom fiscal</li>
+                        <li>Entradas de notas fiscais</li>
+                        <li>Devolução para fornecedores</li>
+                        <li>Troca/devolução de clientes</li>
+                        <li>Dashboard de compras X vendas</li>
+                        <li>Impressão de etiquetas de produtos</li>
+                        <li>Relatórios de vendas</li>
+                        <li>Relatórios de estoque</li>
+                        <li>Relatórios fiscais</li>
+                        <li>Auditoria completa de usuário</li>
+                      </ul>
+                      <a type="button" href="https://wa.me/558892361828" target="_blank" class="w-100 btn btn-lg btn-outline-primary">Contratar</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col gy-4">
+                  <div class="card h-100 mb-4 rounded-3 shadow-sm hidden plano">
+                    <div class="card-header py-3">
+                      <img class="bi me-2" width="70" padding="0" aria-hidden="true" src="/images/CONTROLE.png">
+                      <h4 class="my-0 fw-bold">Controle</h4>
+                      <p class="mt-1 fs-6 text-body-secondary">Para controlar o estoque e o financeiro da sua empresa</p>
+                    </div>
+                    <div class="card-body">
+                      <ol class="list-unstyled mt-3 mb-4">
+                        <li class="fw-bold">Todas as funções do plano anterior</li>
+                        <li>Pré-venda</li>
+                        <li>Orçamento</li>
+                        <li>Ordem de serviço</li>
+                        <li>Pedidos de venda</li>
+                        <li>Créditos de cliente</li>
+                        <li>Empréstimo de produtos</li>
+                        <li>Produção de produtos</li>
+                        <li>Transferência entre locais de estoque</li>
+                        <li>Inventário de estoque</li>
+                        <li>Controle de lote de produtos</li>
+                        <li>Gestão completa de estoque</li>
+                        <li>Dashboard de estoque</li>
+                        <li>Controle completo de caixa</li>
+                        <li>Contas a pagar</li>
+                        <li>Contas a receber</li>
+                        <li>Vale de funcionários</li>
+                        <li>Crédito de cliente</li>
+                        <li>Emissão de recibos</li>
+                        <li>Dashboard financeiro</li>
+                        <li>Relatório de vendas por forma de pgto</li>
+                        <li>Relatório de produtos vendidos</li>
+                        <li>Relatório financeiro</li>
+                      </ol>
+                      <a type="button" href="https://wa.me/558892361828" target="_blank" class="w-100 btn btn-lg btn-outline-primary">Contratar</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col gy-4">
+                  <div class="card h-100 mb-4 rounded-3 shadow-sm hidden plano">
+                    <div class="card-header py-3">
+                      <img class="bi me-2" width="70" padding="0" aria-hidden="true" src="/images/AVANCADO.png">
+                      <h4 class="my-0 fw-bold">Avançado</h4>
+                      <p class="mt-1 fs-6 text-body-secondary">Para controlar totalmente a sua empresa</p>
+                    </div>
+                    <div class="card-body">
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li class="fw-bold">Todas as funções do plano anterior
+                        </li>
+                        <li>Transferência de produtos entre lojas</li>
+                        <li>Emissão de boletos</li>
+                        <li>Controle de cheques recebidos</li>
+                        <li>Controle de cheques emitidos</li>
+                        <li>Controle de contas correntes</li>
+                        <li>Controle de tesouraria</li>
+                        <li>Controle de recebimento de cartões</li>
+                        <li>Folhas de pagamento</li>
+                        <li>Controle de cobrança de cliente</li>
+                        <li>Controle de despesa por setor</li>
+                        <li>Fluxo de caixa mensal</li>
+                        <li>Fluxo de caixa anual</li>
+                        <li>DRE Gerencial mensal</li>
+                        <li>DRE Gerencial anual</li>
+                        <li>Relatório de fechamento mensal</li>
+                        <li>Fluxo de caixa futuro</li>
+                        <li>Gestão de clientes</li>
+                        <li>Relatórios Inteligentes</li>
+                        <li>Relatório de sugestão de compras</li>
+                        <li>Relatório de previsão de faturamento</li>
+                        <li>Relatório de comissões</li>
+                        <li>Dashboard gestão de contas a receber</li>
+                        <li>Dashboard gestão de contas a pagar</li>
+                        <li>Dashboard de faturamento de lojas</li>
+                        <li>Dashboard de lote de produtos</li>
+                        <li>Dashboard de gestão de despesas</li>
+                        <li>Dashboard de metas</li>
+                      </ul>
+                      <a type="button" href="https://wa.me/558892361828" target="_blank" class="w-100 btn btn-lg btn-outline-primary">Contratar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    </section>
+
+
+    <!-- sobre -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="images/heroes.jpg" class="img-fluid planos hidden" alt="Sobre mós imagem">
+                </div>
+                <div class="col-md-6 p-4">
+                    <h2 class="title">Descubra nossa jornada <br>Inovando hoje para um amanhã melhor</h2>
+                    <p>Em nossa essência, somos inovadores, criadores e solucionadores de problemas. Com uma paixão pela excelência, unimos criatividade e tecnologia para entregar soluções que ultrapassam os limites do que é possível.</p>
+                    <p>Cada projeto que realizamos é um passo em direção a moldar um futuro melhor para nossos clientes e suas atividades.</p>
+
+                    <div class="row text-center my-4">
+                        <div class="col-sm-4 my-2">
+                            <div class="card py-4 blue">
+                                <i class="bi bi-buildings display-5"></i>
+                                <h3>+9</h3>
+                                <p>Estados no Brasil</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 my-2">
+                            <div class="card py-4 blue">
+                                <i class="bi bi-file-earmark-pdf display-5"></i>
+                                <h3>+800</h3>
+                                <p>Doc fiscais emitidos</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 my-2">
+                            <div class="card py-4 blue">
+                                <i class="bi bi-patch-check display-5"></i>
+                                <h3>97%</h3>
+                                <p>Satisfação</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/558892361828"><button class="btn btn-dark btn-about">Saiba mais</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- perguntas frequentes -->
+    <section id="faq" class="py-5">
+        <div class="container">
+            <h2 class="title text-center">
+                Perguntas Frequentes
+            </h2>
+            <div class="accordion accordion-flush" id="accordionFAQ">
+                <!-- FAQ1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">Quais são os benefícios da Tecknoo?</button>
+                    </h2>
+                </div>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">Nossos serviços são projetados para aumentar a eficiência, reduzir custos e impulsionar seus resultados.</div>
+                </div>
+
+                <!-- FAQ2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">Quais são os segmentos atendidos?</button>
+                    </h2>
+                </div>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">Atendemos os segmentos de Varejo em geral, Atacado, Distribuidora, Indústria, Autopeça, Oficina, Ótica e Farmácia.</div>
+                </div>
+                <!-- FAQ3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">Como enviar o relatório fiscal para o contador?</button>
+                    </h2>
+                </div>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">Possuimos uma integração contábil direto com o sistema. Dessa forma, o contador tem a cesso liberado aos dados contábeis e fiscais de seus clientes, quando lançados dentro do sistema. O contador e o cliente não gastam nada para utilizar esse recurso, basta se cadastrarem.</div>
+                </div>
+
+                <!-- FAQ4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">Quais são as formas de pagamentos aceitas?</button>
+                    </h2>
+                </div>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">As formas de pagamento disponíveis são: cartão de crédito podendo parcelar a partir da modalidade semestral, pix e dinheio para pagamento à vista. <br>
+                    <br>
+                    O pagamento da sua assinatura poderá ser <strong>mensal, semestral ou anual.</strong> Optando pelo pagamento semestral ou anual, você terá desconto sobre o valor da assinatura e poderá ser parcelado somente no cartão de crédito. Você pode pagar o valor total do plano parcelado no cartão de crédito, à vista no dinheiro ou pix.
+                    </div>
+                </div>
+
+                
+                
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+     <footer class="footer text-white py-3 text-center dark">
+        <p class="mab-0">&copy; 2025 Tecknoo | Todos os direitos reservados.
+        <br>CNPJ 58.341.295/0001-40</p>
+     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
